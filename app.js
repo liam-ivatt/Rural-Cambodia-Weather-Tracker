@@ -19,15 +19,18 @@ app.listen(port, () => {
 
 // Render index page
 app.get('/', (req, res) => {
-    res.render('index')
+    res.render('index/index')
 });
 
 // Render charities page
 app.get('/charities', (req, res) => {
-    res.render('charities')
+    res.render('charities/charities')
 });
+
+// Define weather file for temperature tracking
+const weatherFile = require('./views/weather/weather.json')
 
 // Render weather page
 app.get('/weather', (req, res) => {
-    res.render('weather')
+    res.render('weather/weather', weatherFile)
 });

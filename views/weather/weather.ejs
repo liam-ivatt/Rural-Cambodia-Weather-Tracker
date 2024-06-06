@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="public/styles/index.css">
+</head>
+<body>
+    <!-- Header partial -->
+    <%- include('../partials/header.ejs') %>
+
+    <!-- Navigation partial -->
+    <%- include('../partials/nav.ejs') %>
+
+    <% if (temperature > 35) { %>
+
+        <h2>Temperature is <%= temperature %>, weather warning RED</h2>
+
+    <% } else if (temperature > 30) { %>
+
+        <h2>Temperature is <%= temperature %>, weather warning YELLOW</h2>
+
+    <% } else { %>
+
+        <h2>Temperature is <%= temperature %>, weather warning GREEN</h2>
+
+    <% } %>
+
+    <!-- Footer partial -->
+    <%- include('../partials/footer.ejs') %>
+    
+</body>
+</html>

@@ -28,7 +28,18 @@ footer {
     bottom: 0;
     width: 100%;
     text-align: center;
-    padding: 3px;
-    background-color: grey;
+    padding: 1px;
+    background-color: #333;
     color: white;
+}
+
+h1 {
+    color: #2596be;
+    font-family: Verdana, sans-serif;
+}
+
+footer p {
+    font-family: Verdana, sans-serif;
+    float: left;
+    padding-left: 10px;
 }
