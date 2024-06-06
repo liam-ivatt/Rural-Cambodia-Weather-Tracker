@@ -13,6 +13,7 @@
     <!-- Navigation partial -->
     <%- include('../partials/nav.ejs') %>
 
+    <!-- Condition which loads the page, based on temperature (TODO CHANGE REQUIREMENTS)-->
     <% if (temperature > 35) { %>
 
         <h2>Temperature is <%= temperature %>, weather warning RED</h2>
