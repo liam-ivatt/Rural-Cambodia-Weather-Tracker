@@ -1,21 +1,30 @@
-.navUL {
+ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+    padding: 10px;
 }
 
-.navLI{
-    float: left;
-}
-  
-li a {
-    display: block;
+.nav {
+    display: inline-block;
+    font-family: Verdana, sans-serif;
     color: white;
+    padding: 0px 25px;
+}
+
+nav {
+    background-color: #493d3f;
     text-align: center;
-    padding: 14px 16px;
+}
+
+a {
     text-decoration: none;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
 }
 
 .active {
@@ -29,17 +38,59 @@ footer {
     width: 100%;
     text-align: center;
     padding: 1px;
-    background-color: #333;
+    background-color: #493d3f;
     color: white;
 }
 
-h1 {
+header {
     color: #2596be;
     font-family: Verdana, sans-serif;
+    text-align: center;
 }
 
 footer p {
     font-family: Verdana, sans-serif;
-    float: left;
     padding-left: 10px;
+}
+
+.textBox {
+    border: 4px solid #333;
+    border-radius: 20px;
+    width: 95%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    color: #2596be;
+    font-family: Verdana, sans-serif;
+    text-align: center;
+    font-size: 250%;
+    text-decoration: underline;
+}
+
+.charityHeader {
+    color: #2596be;
+    font-family: Verdana, sans-serif;
+    text-align: center;
+    font-size: 200%;
+    margin: 0%;
+}
+
+.charityTextDescription {
+    display: inline-block;
+    font-size: 150%;
+    width: 60%;
+    float: left;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.charityImage {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 36%;
+    height: 50%;
 }
