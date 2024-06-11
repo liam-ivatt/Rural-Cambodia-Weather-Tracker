@@ -13,20 +13,45 @@
     <!-- Navigation partial -->
     <%- include('../partials/nav.ejs') %>
 
+    <div id= "images">
+    <% if (weatherType == "Sunny") { %>
+
+        <img src="../../public/images/weathericons/Sunny.svg" class="weatherIcon"/>
+
+    <% } else if (weatherType == "Cloudy") { %>
+
+        <img src="../../public/images/weathericons/Cloudy.svg" class="weatherIcon"/>
+
+    <% } else if (weatherType == "Stormy") { %>
+
+        <img src="../../public/images/weathericons/Stormy.svg" class="weatherIcon"/>
+
+    <% } else if (weatherType == "Rainy") { %>
+
+        <img src="../../public/images/weathericons/Rainy.svg" class="weatherIcon"/>
+
+    <% } %>
+
     <!-- Condition which loads the page, based on temperature (TODO CHANGE REQUIREMENTS)-->
     <% if (temperature > 35) { %>
 
-        <h2>Temperature is <%= temperature %>, weather warning RED</h2>
+        <img src="../../public/images/weathericons/Hot.svg" class="weatherIcon"/>
+        <h2>Temperature is <%= temperature %>, weather is <%= weatherType %></h2>
 
     <% } else if (temperature > 30) { %>
 
-        <h2>Temperature is <%= temperature %>, weather warning YELLOW</h2>
+        <img src="../../public/images/weathericons/Warm.svg" class="weatherIcon"/>
+        <h2>Temperature is <%= temperature %>, weather is <%= weatherType %></h2>
 
     <% } else { %>
 
-        <h2>Temperature is <%= temperature %>, weather warning GREEN</h2>
+        <img src="../../public/images/weathericons/Cold.svg" class="weatherIcon"/>
+        <h2>Temperature is <%= temperature %>, weather is <%= weatherType %></h2>
 
     <% } %>
+    
+    </div>
+
 
     <!-- Footer partial -->
     <%- include('../partials/footer.ejs') %>
