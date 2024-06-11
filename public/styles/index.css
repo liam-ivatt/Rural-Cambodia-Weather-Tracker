@@ -60,6 +60,7 @@ footer p {
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
+    overflow: auto;
 }
 
 h2 {
@@ -81,7 +82,7 @@ h2 {
 .charityTextDescription {
     display: inline-block;
     font-size: 150%;
-    width: 60%;
+    width: 70%;
     float: left;
     padding-left: 1%;
     padding-right: 1%;
@@ -89,8 +90,10 @@ h2 {
 
 .charityImage {
     display: inline-block;
+    text-align: right;
     margin-left: auto;
     margin-right: auto;
-    width: 36%;
-    height: 50%;
+    width: 25%;
+    border-radius: 20px;
+    border: 4px solid #333;
 }
