@@ -68,7 +68,6 @@ h2 {
     font-family: Verdana, sans-serif;
     text-align: center;
     font-size: 250%;
-    text-decoration: underline;
 }
 
 .charityHeader {
@@ -81,11 +80,12 @@ h2 {
 
 .charityTextDescription {
     display: inline-block;
-    font-size: 150%;
+    font-size: 145%;
     width: 70%;
     float: left;
     padding-left: 1%;
     padding-right: 1%;
+    font-family: Verdana, sans-serif;
 }
 
 .charityImage {
@@ -115,4 +115,43 @@ h2 {
 
 #statusHeader {
     text-decoration: none;
+}
+
+.indexBox {
+    width: 75%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+}
+
+.indexImage {
+    display: inline-block;
+    text-align: right;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    border: 4px solid #333;
+}
+
+.indexText {
+    display: inline-block;
+    font-size: 145%;
+    width: 70%;
+    float: left;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-family: Verdana, sans-serif;
+    text-align: left;
+}
+
+.indexTextRight {
+    display: inline-block;
+    font-size: 145%;
+    width: 70%;
+    float: right;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-family: Verdana, sans-serif;
+    text-align: right;
 }
