@@ -13,43 +13,34 @@
     <!-- Navigation partial -->
     <%- include('../partials/nav.ejs') %>
 
+    <!-- Condition which loads the page, based on temperature and weather conditions-->
     <div id= "images">
-    <% if (weatherType == "Sunny") { %>
+        <% if (weatherType == "Sunny") { %>
+            <img src="../../public/images/weathericons/Sunny.svg" class="weatherIcon"/>
 
-        <img src="../../public/images/weathericons/Sunny.svg" class="weatherIcon"/>
+        <% } else if (weatherType == "Cloudy") { %>
+            <img src="../../public/images/weathericons/Cloudy.svg" class="weatherIcon"/>
 
-    <% } else if (weatherType == "Cloudy") { %>
+        <% } else if (weatherType == "Stormy") { %>
+            <img src="../../public/images/weathericons/Stormy.svg" class="weatherIcon"/>
 
-        <img src="../../public/images/weathericons/Cloudy.svg" class="weatherIcon"/>
+        <% } else if (weatherType == "Rainy") { %>
+            <img src="../../public/images/weathericons/Rainy.svg" class="weatherIcon"/>
 
-    <% } else if (weatherType == "Stormy") { %>
+        <% } %>
 
-        <img src="../../public/images/weathericons/Stormy.svg" class="weatherIcon"/>
+        
+        <% if (temperature > 35) { %>
+            <img src="../../public/images/weathericons/Hot.svg" class="weatherIcon"/>
 
-    <% } else if (weatherType == "Rainy") { %>
+        <% } else if (temperature > 30) { %>
+            <img src="../../public/images/weathericons/Warm.svg" class="weatherIcon"/>
 
-        <img src="../../public/images/weathericons/Rainy.svg" class="weatherIcon"/>
+        <% } else { %>
+            <img src="../../public/images/weathericons/Cold.svg" class="weatherIcon"/>
 
-    <% } %>
-
-    <!-- Condition which loads the page, based on temperature (TODO CHANGE REQUIREMENTS)-->
-    <% if (temperature > 35) { %>
-
-        <img src="../../public/images/weathericons/Hot.svg" class="weatherIcon"/>
-        <h2>Temperature is <%= temperature %>, weather is <%= weatherType %></h2>
-
-    <% } else if (temperature > 30) { %>
-
-        <img src="../../public/images/weathericons/Warm.svg" class="weatherIcon"/>
-        <h2>Temperature is <%= temperature %>, weather is <%= weatherType %></h2>
-
-    <% } else { %>
-
-        <img src="../../public/images/weathericons/Cold.svg" class="weatherIcon"/>
-        <h2>Temperature is <%= temperature %>, weather is <%= weatherType %></h2>
-
-    <% } %>
-    
+        <% } %>
+        <section class="textBox"><h2 id="statusHeader">Temperature is <%= temperature %> degrees celsius, weather is <%= weatherType %></h2></section>
     </div>
 
 

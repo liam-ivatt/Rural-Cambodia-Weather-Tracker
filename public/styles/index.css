@@ -112,3 +112,7 @@ h2 {
 #images {
     text-align: center;
 }
+
+#statusHeader {
+    text-decoration: none;
+}
