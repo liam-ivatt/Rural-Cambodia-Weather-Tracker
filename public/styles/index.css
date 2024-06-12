@@ -155,3 +155,16 @@ h2 {
     font-family: Verdana, sans-serif;
     text-align: right;
 }
+
+.villageImage {
+    display: inline-block;
+    text-align: right;
+    margin-left: auto;
+    margin-right: auto;
+    width: 27%;
+    border: 4px solid #333;
+}
+
+.spacer {
+    padding-bottom: 10%;
+}
