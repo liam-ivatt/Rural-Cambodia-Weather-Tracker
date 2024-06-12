@@ -1,7 +1,13 @@
-const express = require("express")
+const express = require('express')
+const bodyParser = require('body-parser')
+const fs = require('fs')
+const path = require('path')
+var submitFile = fs.readFileSync("./data.json")
+var submitObject = JSON.parse(submitFile)
 
 // Express app
 const app = express();
+app.use(express.json())
 
 // Assigning port
 const port = 8080;
@@ -27,10 +33,16 @@ app.get('/charities', (req, res) => {
     res.render('charities/charities')
 });
 
-// Define weather file for temperature tracking
-const weatherFile = require('./views/weather/weather.json')
-
 // Render weather page
 app.get('/weather', (req, res) => {
-    res.render('weather/weather', weatherFile)
+    res.render('weather/weather')
 });
+
+app.post("/submit",(req,res)=>{
+    // add to 
+    const phoneObject = {
+        phoneNum:(req.body.phoneNum),
+    }
+        submitObject["data"].push(phoneObject)
+        fs.writeFile("data.json", JSON.stringify(submitObject), () => {})
+        })

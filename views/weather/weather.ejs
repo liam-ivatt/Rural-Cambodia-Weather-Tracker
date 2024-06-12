@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather</title>
     <link rel="stylesheet" href="public/styles/index.css">
+    <script src="public/scripts/weatherform.js" defer></script>
 </head>
 <body>
     <!-- Header partial -->
@@ -19,6 +20,14 @@
         <section class="textBox">
             <h2 id="statusHeader">Loading weather data...</h2>
         </section>
+    </div>
+
+    <div class="spacer">
+        <form id="userForm">
+            <label for="phoneNum">Phone Number:</label>
+            <input type="text" id="phoneNum" required>
+            <button type="submit">Submit</button>
+        </form>
     </div>
 
     <script src="public/scripts/weather.js"></script> 
