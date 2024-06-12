@@ -52,11 +52,11 @@ function displayWeather(data) {
 
     // Update the weather icon on the webpage
     document.getElementById('weatherIcon').src = weatherIconPath;
-    document.getElementById('weatherIcon').style.display = 'block';
+    document.getElementById('weatherIcon').style.display = 'inline-block';
 
     // Update the temperature icon on the webpage
     document.getElementById('temperatureIcon').src = temperatureIconPath;
-    document.getElementById('temperatureIcon').style.display = 'block';
+    document.getElementById('temperatureIcon').style.display = 'inline-block';
 
     // Update the status header with the current temperature and weather type
     document.getElementById('statusHeader').innerText = `Temperature is ${temperature} degrees Celsius, weather is ${weatherType}`;
