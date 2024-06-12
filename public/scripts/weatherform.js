@@ -1,5 +1,9 @@
 async function onclickFunction(e){
     e.preventDefault()
+    let button = document.getElementById('phoneButton')
+    button.innerText = "Submitted!"
+    button.style.cursor = "default"
+    button.disabled = true
 
     var emailObject = {
         phoneNum: document.getElementById("phoneNum").value,

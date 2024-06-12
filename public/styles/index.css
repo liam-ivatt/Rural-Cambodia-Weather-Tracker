@@ -167,4 +167,36 @@ h2 {
 
 .spacer {
     padding-bottom: 10%;
+    text-align: center;
+    margin-top: 5%;
+}
+
+#phonelabel {
+    color: #2596be;
+    font-family: Verdana, sans-serif;
+}
+
+#phoneNum {
+    border: 2px solid #333;
+}
+
+#phoneButton {
+    display: block;
+    border: 2px solid #333;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    height: 25px;
+    font-family: Verdana, sans-serif;
+    cursor: pointer;
+}
+
+#alertTitle {
+    color: #2596be;
+    text-decoration: underline;
+    font-family: Verdana, sans-serif;
+    text-align: center;
+    font-size: 150%;
 }
