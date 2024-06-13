@@ -23,15 +23,16 @@
     </div>
 
     <section class="textBox">
-        <p id="alertTitle">Sign up to the alerts!<p>
+        <p id="alertTitle">Recieve weather alerts<p>
         <div class="spacer">
             <form id="userForm">
-                <label for="phoneNum" id="phonelabel">Phone Number:</label>
-                <input type="text" id="phoneNum" required>
+                <input pattern="[0-9]+" id="phoneNum" required>
                 <button type="submit" id="phoneButton">Submit</button>
             </form>
         </div>
     </section>
+
+    <div class="spacer"></div>
 
     <script src="public/scripts/weather.js"></script> 
 

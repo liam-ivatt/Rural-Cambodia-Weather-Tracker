@@ -34,6 +34,7 @@ function displayWeather(data) {
         weatherIconPath = "../../public/images/weathericons/Sunny.svg";
     } else if (weatherType === "Clouds") {
         weatherIconPath = "../../public/images/weathericons/Cloudy.svg";
+        weatherIconPath.style
     } else if (weatherType === "Storm") {
         weatherIconPath = "../../public/images/weathericons/Stormy.svg";
     } else if (weatherType === "Rain") {
