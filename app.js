@@ -39,7 +39,7 @@ app.get('/weather', (req, res) => {
 });
 
 app.post("/submit",(req,res)=>{
-    // add to 
+    // Create phone object, push to "data" file
     const phoneObject = {
         phoneNum:(req.body.phoneNum),
     }
