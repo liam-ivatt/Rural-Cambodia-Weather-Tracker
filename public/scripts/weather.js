@@ -1,7 +1,7 @@
 // Function to fetch and display weather data
 function getWeather() {
     // API key for OpenWeatherMap
-    const apiKey = "6273928bc4b2e7b23a77f782e44b2b24";
+    const apiKey = "";
     // City for which to fetch the weather
     const city = "Senmonourom";
 
